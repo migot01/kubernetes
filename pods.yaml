@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: firstpod
+
+spec:
+  containers:
+    - name: alphine
+      image: gliderlabs/alpine:3.4
+      ports:
+        - containerPorts: 8081
